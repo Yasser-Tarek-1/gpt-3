@@ -1,0 +1,140 @@
+.footer {
+  padding: var(--main-padding);
+  padding-bottom: 20px;
+  background-color: #031b34;
+}
+
+.footer .footer_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_one h2 {
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.row_one p {
+  width: fit-content;
+  margin: 30px auto;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 1px solid #fff;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.row_one p:hover {
+  background-color: #ff4820;
+  color: #fff;
+}
+
+.row_two {
+  display: flex;
+  margin: 50px 0;
+}
+
+.row_two .col_1 {
+  flex: 1.5;
+}
+
+.row_two .col_1 div {
+  width: 90px;
+  margin-bottom: 14px;
+}
+.row_two .col_1 div img {
+  width: 100%;
+  height: 100%;
+}
+.row_two .col_1 .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex: 2;
+}
+
+.row_two .col_2 {
+  flex: 1;
+}
+
+.row_two .col_3 {
+  flex: 1;
+}
+.row_two .col_4 {
+  flex: 1;
+}
+
+.col_2,
+.col_3,
+.col_4 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.links h4 {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.links li {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 14px 0;
+  transition: 0.2 all;
+}
+
+.links li:hover {
+  color: #ff4820;
+}
+
+.row_three {
+  margin: 0 auto;
+}
+
+.row_three p {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .row_one h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .row_two .col_1 {
+    flex: 1;
+  }
+}
+@media (max-width: 575px) {
+  .row_one h2 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .row_one p {
+    padding: 10px;
+  }
+  .row_two {
+    flex-direction: column;
+    align-items: center;
+  }
+  .row_two .links {
+    margin-top: 30px;
+  }
+}

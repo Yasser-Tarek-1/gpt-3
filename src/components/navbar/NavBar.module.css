@@ -1,0 +1,117 @@
+.navbar {
+  padding: var(--main-padding);
+}
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar .navbar_logo img {
+  height: 16.02px;
+  width: 62.56px;
+  margin-bottom: -6px;
+}
+
+.navbar .navbar_links {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar_links {
+    display: none;
+  }
+}
+
+.navbar .navbar_links p a {
+  font-size: 18px;
+  color: #fff;
+  padding: 0 16px;
+  line-height: 24.59px;
+  transition: 0.2s;
+}
+
+.navbar .navbar_sign {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar_sign {
+    display: none;
+  }
+}
+
+.navbar .navbar_sign .signin a {
+  transition: 0.2s;
+}
+
+.navbar .navbar_sign .signin,
+.navbar .navbar_sign .signup {
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.navbar .navbar_sign .signup {
+  border-radius: 4px;
+  background-color: #ff4820;
+  padding: 12px 22px;
+  margin-left: 20px;
+}
+.navbar .navbar_sign .signup:hover {
+  background-color: #d53310;
+}
+
+.navbar .navbar_sign .signin:hover a,
+.navbar .navbar_links p:hover a {
+  color: #ff4820;
+}
+.navbar .togle_menu {
+  display: none;
+}
+.navbar .togle_menu svg {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .navbar .togle_menu {
+    display: block;
+  }
+}
+
+.navbar .navbar_links_menu {
+  position: absolute;
+  top: 35px;
+  right: 16px;
+  background: #040c18;
+  border-radius: 4px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar_links_menu {
+    display: none;
+  }
+}
+
+.navbar .navbar_links_menu p {
+  padding: 6px 18px;
+}
+.navbar .navbar_links_menu p a {
+  transition: 0.2s;
+}
+
+.navbar .navbar_links_menu p:not(.signup):hover a {
+  color: #ff4820;
+}
+
+.navbar .navbar_links_menu .signup {
+  border-radius: 0;
+  background-color: #ff4820;
+}
+.navbar .navbar_links_menu .signup:hover {
+  background-color: #d53310;
+}
